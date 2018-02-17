@@ -1,0 +1,146 @@
+#wrapper {
+	margin: auto 25px 10px 25px;
+}
+#title-img {
+	display: inline-block;
+	/*width: 64px;*/
+}
+#title-block {
+	display: inline-block;
+}
+#title-container {
+	margin-top: 16px;
+}
+.title {
+	white-space: nowrap;
+	margin: 0;
+	display: inline-block;
+}
+.subtitle {
+	white-space: nowrap;
+	margin: 0;
+	font-size: 80%;
+}
+.subheading {
+	white-space: nowrap;
+}
+.inline {
+	display: inline-block;
+}
+.icon-img {
+	padding: 0 5px 0 0;
+	width: 32px;
+}
+.url {
+	background-color: rgb(244, 245, 246);
+	word-wrap: break-word;
+}
+.resize-vertical {
+	resize: vertical;
+}
+
+/* Inherited */
+.button-grey {
+  background-color: #555;
+  border-color: #555;
+}
+.button-grey.button-clear,
+.button-grey.button-outline {
+  background-color: transparent;
+  color: #555;
+}
+.button-grey.button-clear:hover,
+.button-grey.button-outline:hover {
+  color: #f66;
+  border-color: #f66;
+}
+.button-grey.button-clear:active,
+.button-grey.button-outline:active {
+  color: #b22;
+  border-color: #b22;
+}
+
+.no-flex.row {
+	display: block;
+}
+
+ /* Checkbox */
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.center-align-text {
+	text-align: center;
+}
+
+.check-box {
+	width: 30px;
+	margin: 10px 5px;
+	padding: 7px 0;
+	position: relative;
+}
+
+.check-box label {
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+  	left: 0;
+	background: #eee;
+	border:1px solid #ddd;
+}
+
+/* Check mark */
+.check-box label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 8px;
+	background: transparent;
+	top: 8px;
+	left: 5px;
+	border: 4px solid #333;
+	border-top: none;
+	border-right: none;
+
+	transform: rotate(-45deg);
+}
+
+.check-box label:hover::after {
+	opacity: 0.5;
+}
+
+/* Check mark clicked */
+.check-box input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+.no-flex.column.column-10,
+.no-flex.column.column-20,
+.no-flex.column.column-25,
+.no-flex.column.column-50,
+.no-flex.column.column-75 {
+	flex: 0 1 auto;
+	display: inline-block;
+}
+
+/* Base style */
+body {
+	min-width: 60.0rem;
+	max-width: 60.0rem;
+}
+hr {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+input[type=number]:focus,
+input[type=text]:focus,
+textarea:focus {
+	border: 1px solid #f66;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #555;
+}

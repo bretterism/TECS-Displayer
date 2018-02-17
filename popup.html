@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>TECS TV Displayer</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="milligram-1.3.0/milligram.min.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="title-container">
+			<img id="title-img" src="img/coffee_64.png">
+			<div id="title-block">
+				<h3 class="title">TECS TV Displayer</h3>
+				<p class="subtitle">Customize tabs for TV Displays - Created by Brett Hayes</p>
+			</div>
+		</div>
+		<hr />
+		<div id="settings">
+			<div id="tabs">
+      	<img id="tab-favIconUrl" class="icon-img" src="">
+      	<h4 id="tab-title"></h4>
+        <div class="row">
+          <div id="tab-url" class="url"></div>
+        </div>
+        <hr />
+        <div class="no-flex row">
+        	<div class="no-flex column column-20">
+        		<label class="">Enable</label>
+        		<div class="check-box">
+					<input type="checkbox" id="tab-enabled">
+					<label for="tab-enabled"></label>
+				</div>
+        	</div>
+        	<div class="no-flex column column-25">
+        		<label for="tab-zoom">Zoom</label>
+        		<input id="tab-zoom" type="number" value="100">
+        	</div>
+        </div>
+        <div class="row">
+	      	<label for="tab-css">Insert CSS</label>
+	        <textarea id="tab-css" class="resize-vertical" spellcheck="false"></textarea>
+      	</div>
+      	<div class="row">
+      		<button id="btn-submit" class="button button-grey button-outline">Save Changes</button>
+      	</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="popup_script.js"></script>
+</html>
